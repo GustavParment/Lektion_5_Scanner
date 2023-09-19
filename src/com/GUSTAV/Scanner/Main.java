@@ -12,6 +12,16 @@ public class Main {
         // Objects
         Scanner sc = new Scanner(System.in);
         Student benny = new Student();
+
+        // Colord text
+        System.out.println("\u001B[33m" + "THIS TEXT IS COLORD " + "\u001B[0m");
+
+        System.out.println("WELCOME, PLEASE WRIGHT SOMETHING");
+        sc.nextLine();
+
+        System.out.println("WRITE SOMETHING ELSE ");
+        sc.nextLine();
+
         // Game
         do {
 
