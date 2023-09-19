@@ -3,47 +3,28 @@ import java.util.Scanner;
 
 
 
-//TODO Lektion Scanner
+/*TODO Lektion Scanner
+   -branch Basic
+ -
+ */
 public class Main {
     public static void main(String[] args) {
 
-        boolean isPlaying = true;
-
-       do {
-           int result = scannerNumber();
-
-           if (result > 1000){
-               break;
-           }
-           for (int i = 0; i < result ; i++) {
-               System.out.println(i);
-
-           }
-
-
-
-       }while (isPlaying);
-
-
-    }
-    public static int scannerNumber(){
         Scanner sc = new Scanner(System.in);
 
-        System.out.println("Pleas insert a number");
+        do {
+            System.out.println("Input number! ");
+            int result = sc.nextInt();
+
+            System.out.println("You picked " + result);
 
 
-        return sc.nextInt();
+        } while (true);
 
-    }
-    public static String scannerText(){
-        Scanner sc = new Scanner(System.in);
 
-        System.out.print("Insert some sentence ");
-        String input = sc.nextLine();
-
-        return input;
     }
 }
+
 
 
 
